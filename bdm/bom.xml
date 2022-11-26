@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.agency.model.Client">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="lastname" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="username" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="password" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.agency.model.ClientAddress" fetchType="LAZY" name="address" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="phone" nullable="false" collection="false"/>
+                <field type="TEXT" length="255" name="eduaction" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="cv" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="coverLetter" nullable="false" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dateTime" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.ClientAddress">
+            <fields>
+                <field type="STRING" length="255" name="street" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="number" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="city" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="country" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.Company">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="username" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="password" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.agency.model.CompanyAddress" fetchType="LAZY" name="address" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="pib" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="foundingDate" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="phone" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="employee" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.CompanyAddress">
+            <fields>
+                <field type="STRING" length="255" name="street" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="number" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="city" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="country" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.InterviewImpression">
+            <fields>
+                <field type="LONG" length="255" name="rating" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="isRecommended" nullable="false" collection="false"/>
+                <field type="TEXT" length="255" name="personalImpression" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.InterviewTimes">
+            <fields>
+                <field type="LOCALDATETIME" length="255" name="time1" nullable="false" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="time2" nullable="false" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="time3" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.PremiumRequest">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.agency.model.Client" fetchType="LAZY" name="client" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.agency.model.Company" fetchType="LAZY" name="employmentCompany" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="agent" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.agency.model.Company" fetchType="LAZY" name="potentialCompanies" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.EmployeePacketArrangement">
+            <fields>
+                <field type="LONG" length="255" name="numberOfEmployees" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="positions" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="experience" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="education" nullable="false" collection="false"/>
+                <field type="DOUBLE" length="255" name="budget" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.agency.model.Client" fetchType="LAZY" name="employees" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
