@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Agencija">
   <customUserInfoDefinitions/>
-  <users/>
-  <roles/>
+  <users>
+    <user userName="nevenaatic">
+      <firstName>Nevena</firstName>
+      <lastName>Atic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">nevena</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Member">
+      <displayName>Member</displayName>
+    </role>
+  </roles>
   <groups>
     <group name="CompanyHandling">
       <displayName>CompanyHandling</displayName>
@@ -34,18 +47,36 @@
     <group name="Boss" parentPath="/Company1">
       <displayName>Boss</displayName>
     </group>
-    <group name="Group1" parentPath="/Company1">
+    <group name="HR" parentPath="/Company1">
       <displayName>HR</displayName>
     </group>
-    <group name="Boss" parentPath="/Company1/Group1">
+    <group name="Boss" parentPath="/Company1/HR">
       <displayName>Boss</displayName>
     </group>
-    <group name="Employee" parentPath="/Company1/Group1">
+    <group name="Employee" parentPath="/Company1/HR">
       <displayName>Employee</displayName>
     </group>
     <group name="ProcurementBoss" parentPath="/Company1">
       <displayName>ProcurementBoss</displayName>
     </group>
+    <group name="ProjectTeam" parentPath="/Company1">
+      <displayName>ProjectTeam</displayName>
+    </group>
+    <group name="NewUser">
+      <displayName>NewUser</displayName>
+    </group>
+    <group name="NewCompany">
+      <displayName>NewCompany</displayName>
+    </group>
+    <group name="Client">
+      <displayName>Client</displayName>
+    </group>
   </groups>
-  <memberships/>
+  <memberships>
+    <membership>
+      <userName>nevenaatic</userName>
+      <roleName>Member</roleName>
+      <groupName>NewUser</groupName>
+    </membership>
+  </memberships>
 </organization:Organization>
