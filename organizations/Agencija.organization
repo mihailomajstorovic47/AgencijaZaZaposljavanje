@@ -4,14 +4,47 @@
   <users/>
   <roles/>
   <groups>
-    <group name="CompanyEmployees">
-      <displayName>CompanyEmployees</displayName>
+    <group name="CompanyHandling">
+      <displayName>CompanyHandling</displayName>
     </group>
-    <group name="Employee" parentPath="/CompanyEmployees">
+    <group name="Employee" parentPath="/CompanyHandling">
       <displayName>Employee</displayName>
     </group>
-    <group name="Boss" parentPath="/CompanyEmployees">
+    <group name="Boss" parentPath="/CompanyHandling">
       <displayName>Boss</displayName>
+    </group>
+    <group name="PremiumEmployment">
+      <displayName>PremiumEmployment</displayName>
+    </group>
+    <group name="Employee" parentPath="/PremiumEmployment">
+      <displayName>Employee</displayName>
+    </group>
+    <group name="Boss" parentPath="/PremiumEmployment">
+      <displayName>Boss</displayName>
+    </group>
+    <group name="ClientHandling">
+      <displayName>ClientHandling</displayName>
+    </group>
+    <group name="Employee" parentPath="/ClientHandling">
+      <displayName>Employee</displayName>
+    </group>
+    <group name="Company1">
+      <displayName>Company1</displayName>
+    </group>
+    <group name="Boss" parentPath="/Company1">
+      <displayName>Boss</displayName>
+    </group>
+    <group name="Group1" parentPath="/Company1">
+      <displayName>HR</displayName>
+    </group>
+    <group name="Boss" parentPath="/Company1/Group1">
+      <displayName>Boss</displayName>
+    </group>
+    <group name="Employee" parentPath="/Company1/Group1">
+      <displayName>Employee</displayName>
+    </group>
+    <group name="ProcurementBoss" parentPath="/Company1">
+      <displayName>ProcurementBoss</displayName>
     </group>
   </groups>
   <memberships/>
