@@ -22,7 +22,7 @@
                 <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="phone" nullable="false" collection="false"/>
                 <field type="TEXT" length="255" name="education" nullable="false" collection="false"/>
-                <field type="BOOLEAN" length="255" name="premium" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="premium" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -46,13 +46,11 @@
         </businessObject>
         <businessObject qualifiedName="com.agency.model.EmployeePacketArrangement">
             <fields>
-                <relationField type="AGGREGATION" reference="com.agency.model.Company" fetchType="LAZY" name="company" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="companyId" nullable="false" collection="false"/>
                 <field type="LONG" length="255" name="numberOfEmployees" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="positions" nullable="false" collection="false"/>
-                <field type="FLOAT" length="255" name="workingExperience" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="education" nullable="false" collection="false"/>
                 <field type="DOUBLE" length="255" name="budget" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.agency.model.Client" fetchType="LAZY" name="employees" nullable="true" collection="true"/>
+                <field type="LONG" length="255" name="employeesIds" nullable="true" collection="true"/>
+                <relationField type="AGGREGATION" reference="com.agency.model.PacketArragementItem" fetchType="LAZY" name="items" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -73,7 +71,17 @@
                 <field type="LOCALDATETIME" length="255" name="time1" nullable="false" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="time2" nullable="false" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="time3" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.agency.model.Company" fetchType="LAZY" name="company" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="companyId" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.PacketArragementItem">
+            <fields>
+                <field type="STRING" length="255" name="workingPosition" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="workingExperience" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="education" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -81,9 +89,9 @@
         </businessObject>
         <businessObject qualifiedName="com.agency.model.PremiumRequest">
             <fields>
-                <relationField type="AGGREGATION" reference="com.agency.model.Client" fetchType="LAZY" name="client" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.agency.model.Company" fetchType="LAZY" name="employmentCompany" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.agency.model.Company" fetchType="LAZY" name="potentialCompanies" nullable="true" collection="true"/>
+                <field type="LONG" length="255" name="clientId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="employmentCompanyId" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="potentialCompaniesIds" nullable="true" collection="true"/>
                 <field type="BOOLEAN" length="255" name="successful" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.agency.model.InterviewImpression" fetchType="LAZY" name="interviewImpressions" nullable="true" collection="true"/>
             </fields>
