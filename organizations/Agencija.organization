@@ -10,6 +10,38 @@
       <password encrypted="false">nevena</password>
       <customUserInfoValues/>
     </user>
+    <user userName="newcompany">
+      <firstName>New</firstName>
+      <lastName>Company</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="milosmarkovic">
+      <firstName>Milos</firstName>
+      <lastName>Markovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="petarmarkovic">
+      <firstName>Petar</firstName>
+      <lastName>Markovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mladenvasic">
+      <firstName>Mladen</firstName>
+      <lastName>Vasic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -77,6 +109,29 @@
       <userName>nevenaatic</userName>
       <roleName>Member</roleName>
       <groupName>NewUser</groupName>
+    </membership>
+    <membership>
+      <userName>newcompany</userName>
+      <roleName>Member</roleName>
+      <groupName>NewCompany</groupName>
+    </membership>
+    <membership>
+      <userName>milosmarkovic</userName>
+      <roleName>Member</roleName>
+      <groupName>Boss</groupName>
+      <groupParentPath>/CompanyHandling</groupParentPath>
+    </membership>
+    <membership>
+      <userName>petarmarkovic</userName>
+      <roleName>Member</roleName>
+      <groupName>Employee</groupName>
+      <groupParentPath>/CompanyHandling</groupParentPath>
+    </membership>
+    <membership>
+      <userName>mladenvasic</userName>
+      <roleName>Member</roleName>
+      <groupName>Employee</groupName>
+      <groupParentPath>/CompanyHandling</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

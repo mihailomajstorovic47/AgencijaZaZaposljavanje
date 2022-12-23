@@ -18,11 +18,12 @@
                 <field type="STRING" length="255" name="lastname" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="username" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="password" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.agency.model.Address" fetchType="LAZY" name="address" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.agency.model.Address" fetchType="LAZY" name="address" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="phone" nullable="false" collection="false"/>
                 <field type="TEXT" length="255" name="education" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="premium" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="successful" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -33,12 +34,24 @@
                 <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="username" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="password" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.agency.model.Address" fetchType="LAZY" name="address" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.agency.model.CompanyAddress" fetchType="LAZY" name="address" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="pib" nullable="false" collection="false"/>
                 <field type="LOCALDATE" length="255" name="foundingDate" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="phone" nullable="false" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.agency.model.Client" fetchType="LAZY" name="employees" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="successful" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.agency.model.CompanyAddress">
+            <fields>
+                <field type="STRING" length="255" name="street" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="number" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="city" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="country" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -46,7 +59,7 @@
         </businessObject>
         <businessObject qualifiedName="com.agency.model.EmployeePacketArrangement">
             <fields>
-                <field type="LONG" length="255" name="companyId" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="companyId" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="numberOfEmployees" nullable="false" collection="false"/>
                 <field type="DOUBLE" length="255" name="budget" nullable="false" collection="false"/>
                 <field type="LONG" length="255" name="employeesIds" nullable="true" collection="true"/>
