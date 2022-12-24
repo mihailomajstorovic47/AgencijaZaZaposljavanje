@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "AgreeDisagreeWithEmployeeForm",
   "name" : "AgreeDisagreeWithEmployeeForm",
-  "lastUpdate" : 1671732385089,
+  "lastUpdate" : 1671834257969,
   "rows" : [
     [
       {
@@ -48,6 +48,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "54efa110-994c-4b78-891b-2508e5c5ce0c",
@@ -147,7 +151,7 @@
                   },
                   "allowHTML" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -167,14 +171,14 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{reasonOfRejection.reasonOfRejection}}"
+                    "value" : "<h4>Reason of company rejection</h4>"
                   },
                   "alignment" : {
                     "type" : "constant",
                     "value" : "left"
                   }
                 },
-                "reference" : "42d8f18b-3184-483d-8c7e-9a71bc6c5e6f",
+                "reference" : "132ddeaf-0a53-4082-95d5-80fe0764ca77",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -185,8 +189,58 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<h3>{{reason.value}}</h3>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "42d8f18b-3184-483d-8c7e-9a71bc6c5e6f",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -203,7 +257,7 @@
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -230,17 +284,16 @@
                     "value" : "Select an option"
                   },
                   "availableValues" : {
-                    "type" : "constant",
-                    "value" : [
-                      "Agree",
-                      "Disagree"
-                    ]
+                    "type" : "expression",
+                    "value" : "options"
                   },
                   "displayedKey" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : "key"
                   },
                   "returnedKey" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : "value"
                   },
                   "value" : {
                     "type" : "variable",
@@ -485,10 +538,20 @@
       ],
       "exposed" : false
     },
-    "reasonOfRejection" : {
+    "options" : {
+      "type" : "json",
+      "value" : [
+        " [",
+        " {\"key\": \"Agree\", \"value\": \"agree\"},",
+        " {\"key\": \"Disagree\", \"value\": \"disagree\"}",
+        " ]"
+      ],
+      "exposed" : false
+    },
+    "reason" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/caseVariable?p=0&c=10&f=case_id={{caseId}}"
+        "../API/bpm/caseVariable/{{task.caseId}}/reasonOfRejection"
       ],
       "exposed" : false
     }

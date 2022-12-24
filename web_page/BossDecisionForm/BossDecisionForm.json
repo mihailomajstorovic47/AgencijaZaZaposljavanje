@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "BossDecisionForm",
   "name" : "BossDecisionForm",
-  "lastUpdate" : 1671758779566,
+  "lastUpdate" : 1671834468186,
   "rows" : [
     [
       {
@@ -182,12 +182,12 @@
                     "value" : "options"
                   },
                   "displayedKey" : {
-                    "type" : "expression",
-                    "value" : "options.key"
+                    "type" : "constant",
+                    "value" : "key"
                   },
                   "returnedKey" : {
-                    "type" : "expression",
-                    "value" : "options.value"
+                    "type" : "constant",
+                    "value" : "value"
                   },
                   "value" : {
                     "type" : "variable",
@@ -272,6 +272,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "9adee668-f732-4873-adc9-e2640975ad14",
@@ -412,11 +433,11 @@
     "options" : {
       "type" : "json",
       "value" : [
-        "[",
+        " [",
         " {\"key\": \"Approve\", \"value\": \"approve\"},",
         " {\"key\": \"Reject\", \"value\": \"reject\"},",
         " {\"key\": \"Transfer\", \"value\": \"transfer\"}",
-        "]"
+        " ]"
       ],
       "exposed" : false
     }

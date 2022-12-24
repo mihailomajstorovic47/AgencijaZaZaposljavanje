@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "EmployeeListForm",
-  "name" : "EmployeeListForm",
-  "lastUpdate" : 1671838349064,
+  "id" : "ReasonOfRejectionForm",
+  "name" : "ReasonOfRejectionForm",
+  "lastUpdate" : 1671833972968,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "4cb3f661-59fd-47b7-b166-dc09eb08af86",
+        "reference" : "77ed6441-1b1e-4096-b349-545c0aaf560b",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "28c2cb93-696c-4d5c-856e-0c9d653688f4",
+              "reference" : "2ab53b81-e0de-4519-a04a-da782525a6aa",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d309259b-91da-4643-8395-33c9bf4ec542",
+              "reference" : "733ea446-e1b5-4154-8925-77af17469e39",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "e870ebb2-0568-4dd1-b0f6-c3b61d783fe6",
+        "reference" : "551d63fe-dd45-4535-813b-97585a238cd0",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "0b0ae629-b669-4419-9bf9-d40d0b99242d",
+          "reference" : "97275d0e-1401-4d5c-89ed-676a3b54ffe4",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -131,9 +131,9 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
@@ -145,7 +145,7 @@
                     "type" : "constant",
                     "value" : false
                   },
-                  "disabled" : {
+                  "readOnly" : {
                     "type" : "constant",
                     "value" : false
                   },
@@ -157,13 +157,21 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
                   "labelHidden" : {
                     "type" : "constant",
                     "value" : false
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Employees"
+                    "value" : "Reason Of Rejection"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -171,32 +179,16 @@
                   },
                   "labelWidth" : {
                     "type" : "constant",
-                    "value" : 4
-                  },
-                  "placeholder" : {
-                    "type" : "interpolation",
-                    "value" : "Employee"
-                  },
-                  "availableValues" : {
-                    "type" : "expression",
-                    "value" : "employees"
-                  },
-                  "displayedKey" : {
-                    "type" : "constant",
-                    "value" : "userName"
-                  },
-                  "returnedKey" : {
-                    "type" : "constant",
-                    "value" : "id"
+                    "value" : 1
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.employeeId"
+                    "value" : "formInput.reasonOfRejection"
                   }
                 },
-                "reference" : "66cdbc4d-c512-44ab-88a4-d4a177675015",
+                "reference" : "1b1acfa2-3512-4f49-a712-3667e4437d94",
                 "hasValidationError" : false,
-                "id" : "pbSelect"
+                "id" : "pbTextarea"
               }
             ],
             [
@@ -274,7 +266,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "21101751-ac00-44e3-935c-6c7bd566d971",
+                "reference" : "38c05457-4e9d-4c6d-872c-122c1781c85f",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -326,7 +318,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ccf7b938-9459-4ea8-9f88-f8e431d1f014",
+                "reference" : "82a23df2-409f-443d-bb6e-b0e3c2d3b809",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -339,16 +331,16 @@
   ],
   "assets" : [
     {
-      "id" : "ddee1fee-a93d-4c61-ac5c-b198e914fba8",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "65007571-5738-4d83-a9c7-2ebf9bac8ac7",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "0fdfaefa-f0a6-4d99-b98a-9895de292e07",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "e79afab3-3169-4733-8cef-dcae72916b7c",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -366,7 +358,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"employeeId\" : \"\"\r",
+        "  \"reasonOfRejection\" : \"\"\r",
         "}"
       ],
       "exposed" : false
@@ -390,7 +382,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\temployeeId: $data.formInput.employeeId",
+        "\treasonOfRejection: $data.formInput.reasonOfRejection",
         "}"
       ],
       "exposed" : false
@@ -408,17 +400,10 @@
         "id"
       ],
       "exposed" : false
-    },
-    "employees" : {
-      "type" : "url",
-      "value" : [
-        "../API/identity/user?p=0&c=100&fgroup_id=0"
-      ],
-      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "62e8e73a-de46-432f-b771-821369ea0bd4",
+  "uuid" : "021230b7-7aeb-4ff5-a6e8-8c22b6b67420",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

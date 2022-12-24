@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "EmployeeDecisionForm",
   "name" : "EmployeeDecisionForm",
-  "lastUpdate" : 1671751323768,
+  "lastUpdate" : 1671831965850,
   "rows" : [
     [
       {
@@ -178,18 +178,16 @@
                     "value" : "Select an option"
                   },
                   "availableValues" : {
-                    "type" : "constant",
-                    "value" : [
-                      "Accept",
-                      "eject"
-                    ]
+                    "type" : "expression",
+                    "value" : "options"
                   },
                   "displayedKey" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : "key"
                   },
                   "returnedKey" : {
-                    "type" : "expression",
-                    "value" : "formInput.employeeDecision"
+                    "type" : "constant",
+                    "value" : "value"
                   },
                   "value" : {
                     "type" : "variable",
@@ -437,6 +435,16 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "options" : {
+      "type" : "json",
+      "value" : [
+        " [",
+        " {\"key\": \"Approve\", \"value\": \"approve\"},",
+        " {\"key\": \"Reject\", \"value\": \"reject\"}",
+        " ]"
       ],
       "exposed" : false
     }

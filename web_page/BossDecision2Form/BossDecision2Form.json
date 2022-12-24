@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "BossDecision2Form",
   "name" : "BossDecision2Form",
-  "lastUpdate" : 1671733192230,
+  "lastUpdate" : 1671831927998,
   "rows" : [
     [
       {
@@ -48,6 +48,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "9a8c6faf-f0fc-43d1-8144-7bf5567fe625",
@@ -96,6 +100,18 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
                 }
               },
               "reference" : "4ecb44bf-8280-45d8-bc6f-e7e928d899be",
@@ -178,17 +194,16 @@
                     "value" : "Select an option"
                   },
                   "availableValues" : {
-                    "type" : "constant",
-                    "value" : [
-                      "Accept",
-                      "Reject"
-                    ]
+                    "type" : "expression",
+                    "value" : "options"
                   },
                   "displayedKey" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : "key"
                   },
                   "returnedKey" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : "value"
                   },
                   "value" : {
                     "type" : "variable",
@@ -407,6 +422,16 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "options" : {
+      "type" : "json",
+      "value" : [
+        " [",
+        " {\"key\": \"Approve\", \"value\": \"approve\"},",
+        " {\"key\": \"Reject\", \"value\": \"reject\"}",
+        " ]"
       ],
       "exposed" : false
     }

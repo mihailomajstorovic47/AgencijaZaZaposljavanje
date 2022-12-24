@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Agencija">
-  <customUserInfoDefinitions/>
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>cv</name>
+      <description>cv</description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
   <users>
     <user userName="nevenaatic">
       <firstName>Nevena</firstName>
@@ -8,7 +13,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">nevena</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="newcompany">
       <firstName>New</firstName>
@@ -16,7 +26,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="milosmarkovic">
       <firstName>Milos</firstName>
@@ -24,7 +39,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="petarmarkovic">
       <firstName>Petar</firstName>
@@ -32,7 +52,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="mladenvasic">
       <firstName>Mladen</firstName>
@@ -40,7 +65,64 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="Company1">
+      <firstName>Company</firstName>
+      <lastName>One</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="filipmarkovic">
+      <firstName>Filip</firstName>
+      <lastName>Markovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value>cv</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="nemanjaradojcic">
+      <firstName>Nemanja</firstName>
+      <lastName>Radojcic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value>cv</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="coa">
+      <firstName>Aleksandar</firstName>
+      <lastName>Milesevic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value>cv</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
   </users>
   <roles>
@@ -132,6 +214,29 @@
       <roleName>Member</roleName>
       <groupName>Employee</groupName>
       <groupParentPath>/CompanyHandling</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Company1</userName>
+      <roleName>Member</roleName>
+      <groupName>Company1</groupName>
+    </membership>
+    <membership>
+      <userName>filipmarkovic</userName>
+      <roleName>Member</roleName>
+      <groupName>Employee</groupName>
+      <groupParentPath>/ClientHandling</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nemanjaradojcic</userName>
+      <roleName>Member</roleName>
+      <groupName>Employee</groupName>
+      <groupParentPath>/ClientHandling</groupParentPath>
+    </membership>
+    <membership>
+      <userName>coa</userName>
+      <roleName>Member</roleName>
+      <groupName>Employee</groupName>
+      <groupParentPath>/ClientHandling</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
