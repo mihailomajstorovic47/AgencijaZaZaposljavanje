@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "CVCoverLetterForm",
-  "name" : "CVCoverLetterForm",
-  "lastUpdate" : 1671883445246,
+  "id" : "InterviewTimesForm",
+  "name" : "InterviewTimesForm",
+  "lastUpdate" : 1671900752388,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2164b8be-83cc-4a30-ad6f-542c9d59dba6",
+        "reference" : "4c98e579-2a5a-49ec-86a3-d0c1955c9210",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b2adbd06-f592-4233-800d-5414d0533a2a",
+              "reference" : "2d267d59-3e00-4221-b619-8c7f3d6606e7",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f742f611-9fe1-4e1c-bbfe-ac91df447667",
+              "reference" : "6b3aa993-acc5-4497-9e52-3468a5ba7661",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "06fb46d7-242f-4a6b-832e-2eb63b7042a8",
+        "reference" : "1df2212d-37cf-4059-81a0-b770d14d7f1d",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,13 +123,13 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "a1ea3ba9-6579-410f-8aee-eb090463a095",
+          "reference" : "eb5d3175-2ecc-4ffc-ada4-fabb9e9e5080",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "container",
+                "type" : "component",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -137,95 +137,35 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Interview Times"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
                   }
                 },
-                "reference" : "5ba2a38b-88db-4e27-8867-53ac39664fe7",
+                "reference" : "d859f2ec-2057-4bc6-9c13-e26cfaeeef3e",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "CV"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.cv"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "a7cea1a5-99ab-41e1-8092-579a211ca7c8",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
+                "id" : "pbTitle",
+                "description" : ""
               }
             ],
             [
@@ -254,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9199e1a2-81a8-4953-a70d-1be8969a5c51",
+                "reference" : "67f06a06-23eb-48be-b529-84980487055f",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -268,17 +208,21 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "showNow" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "inlineInput" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : true
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -286,15 +230,54 @@
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 4
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Cover Letter"
+                          "value" : "Time1"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "timePlaceholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a time (h:mm:ss a)"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "timeFormat" : {
+                          "type" : "constant",
+                          "value" : "h:mm:ss a"
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Browse to upload a new file..."
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "nowLabel" : {
+                          "type" : "constant",
+                          "value" : "Now"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -302,27 +285,228 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.coverLetter"
+                          "value" : "interviewTimes.time1"
+                        },
+                        "withTimeZone" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "00be405e-fbf9-4bc7-b42a-4cc36870b589",
+                      "hasValidationError" : false,
+                      "id" : "pbDateTimePicker",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "showNow" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "inlineInput" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Time2"
+                        },
+                        "type" : {
+                          "type" : "constant"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
                         },
-                        "url" : {
+                        "todayLabel" : {
                           "type" : "constant",
-                          "value" : "../API/formFileUpload"
+                          "value" : "Today"
+                        },
+                        "timePlaceholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a time (h:mm:ss a)"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "timeFormat" : {
+                          "type" : "constant",
+                          "value" : "h:mm:ss a"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "nowLabel" : {
+                          "type" : "constant",
+                          "value" : "Now"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "interviewTimes.time2"
+                        },
+                        "withTimeZone" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
                         }
                       },
-                      "reference" : "b1315704-78e0-4324-b2ea-4a924655bd2d",
+                      "reference" : "f721b2fb-30c8-465d-8739-b0dae0ceaaf0",
                       "hasValidationError" : false,
-                      "id" : "pbUpload",
+                      "id" : "pbDateTimePicker",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "showNow" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "inlineInput" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Time3"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "timePlaceholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a time (h:mm:ss a)"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "timeFormat" : {
+                          "type" : "constant",
+                          "value" : "h:mm:ss a"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "nowLabel" : {
+                          "type" : "constant",
+                          "value" : "Now"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "interviewTimes.time3"
+                        },
+                        "withTimeZone" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "917bcd7f-c9ab-4947-80ab-2f04b3fd6bad",
+                      "hasValidationError" : false,
+                      "id" : "pbDateTimePicker",
                       "description" : ""
                     }
                   ]
@@ -402,9 +586,30 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "7477b8e3-d4c8-405b-a9c7-daf1501ba9e7",
+                "reference" : "3afc89da-c32a-433e-bc24-536605c7217b",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -456,7 +661,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a15632c5-95f2-4456-96f8-2c45d7534ccf",
+                "reference" : "af1657f1-7dfb-4acf-8784-1e5916dcbe75",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -469,16 +674,16 @@
   ],
   "assets" : [
     {
-      "id" : "6d62165e-b2c4-4dd4-b6ba-9adac410f408",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "bb327d11-e95a-4548-94e3-7db7da481f92",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "1d8adfcb-64ac-422e-a711-77e3e26647b1",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "90ddae0b-34f5-44c3-ba5e-078ca7b01f61",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -492,12 +697,10 @@
       ],
       "exposed" : false
     },
-    "formInput" : {
-      "type" : "json",
+    "interviewTimes" : {
+      "type" : "url",
       "value" : [
-        "{\r",
-        "  \r",
-        "}"
+        "../{{context.interviewTimes_ref.link}}"
       ],
       "exposed" : false
     },
@@ -519,9 +722,15 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tcv: $data.formInput.cv,",
-        "\tcoverLetter: $data.formInput.coverLetter",
+        "if( $data.interviewTimes ){",
+        "\treturn {",
+        "\t\t//map interviewTimes variable to expected task contract input",
+        "\t\tinterviewTimesInput: {",
+        "\t\t\ttime1: $data.interviewTimes.time1 !== undefined ? $data.interviewTimes.time1 : null,",
+        "\t\t\ttime2: $data.interviewTimes.time2 !== undefined ? $data.interviewTimes.time2 : null,",
+        "\t\t\ttime3: $data.interviewTimes.time3 !== undefined ? $data.interviewTimes.time3 : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -542,7 +751,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "7a81721c-7c58-48e2-a01a-530dc0e75239",
+  "uuid" : "d81cdfa2-14d8-414f-8b08-4e892cc4d7db",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

@@ -124,6 +124,84 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="laura">
+      <firstName>Laura</firstName>
+      <lastName>Aleksic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="kisic">
+      <firstName>Mihajlo</firstName>
+      <lastName>Kisic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="hrboss">
+      <firstName>HrBoss</firstName>
+      <lastName>HrBoss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="hremployee">
+      <firstName>HrEmployee</firstName>
+      <lastName>HrEmployee</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="project1">
+      <firstName>Project 1</firstName>
+      <lastName>Manager</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="project2">
+      <firstName>Project 2</firstName>
+      <lastName>Manager</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -131,49 +209,49 @@
     </role>
   </roles>
   <groups>
-    <group name="CompanyHandling">
+    <group name="CompanyHandling" parentPath="/Agency">
       <displayName>CompanyHandling</displayName>
     </group>
-    <group name="Employee" parentPath="/CompanyHandling">
+    <group name="Employee" parentPath="/Agency/CompanyHandling">
       <displayName>Employee</displayName>
     </group>
-    <group name="Boss" parentPath="/CompanyHandling">
+    <group name="Boss" parentPath="/Agency/CompanyHandling">
       <displayName>Boss</displayName>
     </group>
-    <group name="PremiumEmployment">
+    <group name="PremiumEmployment" parentPath="/Agency">
       <displayName>PremiumEmployment</displayName>
     </group>
-    <group name="Employee" parentPath="/PremiumEmployment">
+    <group name="Employee" parentPath="/Agency/PremiumEmployment">
       <displayName>Employee</displayName>
     </group>
-    <group name="Boss" parentPath="/PremiumEmployment">
+    <group name="Boss" parentPath="/Agency/PremiumEmployment">
       <displayName>Boss</displayName>
     </group>
-    <group name="ClientHandling">
+    <group name="ClientHandling" parentPath="/Agency">
       <displayName>ClientHandling</displayName>
     </group>
-    <group name="Employee" parentPath="/ClientHandling">
+    <group name="Employee" parentPath="/Agency/ClientHandling">
       <displayName>Employee</displayName>
     </group>
-    <group name="Company1">
+    <group name="Company1" parentPath="/Agency">
       <displayName>Company1</displayName>
     </group>
-    <group name="Boss" parentPath="/Company1">
+    <group name="Boss" parentPath="/Agency/Company1">
       <displayName>Boss</displayName>
     </group>
-    <group name="HR" parentPath="/Company1">
+    <group name="HR" parentPath="/Agency/Company1">
       <displayName>HR</displayName>
     </group>
-    <group name="Boss" parentPath="/Company1/HR">
+    <group name="Boss" parentPath="/Agency/Company1/HR">
       <displayName>Boss</displayName>
     </group>
-    <group name="Employee" parentPath="/Company1/HR">
+    <group name="Employee" parentPath="/Agency/Company1/HR">
       <displayName>Employee</displayName>
     </group>
-    <group name="ProcurementBoss" parentPath="/Company1">
+    <group name="ProcurementBoss" parentPath="/Agency/Company1">
       <displayName>ProcurementBoss</displayName>
     </group>
-    <group name="ProjectTeam" parentPath="/Company1">
+    <group name="ProjectTeam" parentPath="/Agency/Company1">
       <displayName>ProjectTeam</displayName>
     </group>
     <group name="NewUser">
@@ -182,8 +260,11 @@
     <group name="NewCompany">
       <displayName>NewCompany</displayName>
     </group>
-    <group name="Client">
+    <group name="Client" parentPath="/Agency">
       <displayName>Client</displayName>
+    </group>
+    <group name="Agency">
+      <displayName>Agency</displayName>
     </group>
   </groups>
   <memberships>
@@ -201,42 +282,79 @@
       <userName>milosmarkovic</userName>
       <roleName>Member</roleName>
       <groupName>Boss</groupName>
-      <groupParentPath>/CompanyHandling</groupParentPath>
+      <groupParentPath>/Agency/CompanyHandling</groupParentPath>
     </membership>
     <membership>
       <userName>petarmarkovic</userName>
       <roleName>Member</roleName>
       <groupName>Employee</groupName>
-      <groupParentPath>/CompanyHandling</groupParentPath>
+      <groupParentPath>/Agency/CompanyHandling</groupParentPath>
     </membership>
     <membership>
       <userName>mladenvasic</userName>
       <roleName>Member</roleName>
       <groupName>Employee</groupName>
-      <groupParentPath>/CompanyHandling</groupParentPath>
+      <groupParentPath>/Agency/CompanyHandling</groupParentPath>
     </membership>
     <membership>
       <userName>Company1</userName>
       <roleName>Member</roleName>
       <groupName>Company1</groupName>
+      <groupParentPath>/Agency</groupParentPath>
     </membership>
     <membership>
       <userName>filipmarkovic</userName>
       <roleName>Member</roleName>
       <groupName>Employee</groupName>
-      <groupParentPath>/ClientHandling</groupParentPath>
+      <groupParentPath>/Agency/ClientHandling</groupParentPath>
     </membership>
     <membership>
       <userName>nemanjaradojcic</userName>
       <roleName>Member</roleName>
       <groupName>Employee</groupName>
-      <groupParentPath>/ClientHandling</groupParentPath>
+      <groupParentPath>/Agency/ClientHandling</groupParentPath>
     </membership>
     <membership>
       <userName>coa</userName>
       <roleName>Member</roleName>
       <groupName>Employee</groupName>
-      <groupParentPath>/ClientHandling</groupParentPath>
+      <groupParentPath>/Agency/ClientHandling</groupParentPath>
+    </membership>
+    <membership>
+      <userName>laura</userName>
+      <roleName>Member</roleName>
+      <groupName>Employee</groupName>
+      <groupParentPath>/Agency/PremiumEmployment</groupParentPath>
+    </membership>
+    <membership>
+      <userName>kisic</userName>
+      <roleName>Member</roleName>
+      <groupName>Boss</groupName>
+      <groupParentPath>/Agency/PremiumEmployment</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hrboss</userName>
+      <roleName>Member</roleName>
+      <groupName>Boss</groupName>
+      <groupParentPath>/Agency/Company1/HR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hremployee</userName>
+      <roleName>Member</roleName>
+      <groupName>Employee</groupName>
+      <groupParentPath>/Agency/Company1/HR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>project1</userName>
+      <roleName>Member</roleName>
+      <groupName>ProjectTeam</groupName>
+      <groupParentPath>/Agency/Company1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>project2</userName>
+      <roleName>Member</roleName>
+      <groupName>ProjectTeam</groupName>
+      <groupParentPath>/Agency/Company1</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

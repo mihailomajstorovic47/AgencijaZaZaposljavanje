@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "CVCoverLetterForm",
-  "name" : "CVCoverLetterForm",
-  "lastUpdate" : 1671883445246,
+  "id" : "CandidateInterviewImpressionForm",
+  "name" : "CandidateInterviewImpressionForm",
+  "lastUpdate" : 1671913160851,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2164b8be-83cc-4a30-ad6f-542c9d59dba6",
+        "reference" : "3ab7f8fa-58d8-4a26-a669-d0f99b017566",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b2adbd06-f592-4233-800d-5414d0533a2a",
+              "reference" : "72a220d8-7bcc-4944-8f06-4aa57559661e",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f742f611-9fe1-4e1c-bbfe-ac91df447667",
+              "reference" : "1f4941a9-97b2-40ff-a4f9-e14b74a81042",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "06fb46d7-242f-4a6b-832e-2eb63b7042a8",
+        "reference" : "f68efa9f-b468-4803-8d0f-81cdc48275a1",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,13 +123,13 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "a1ea3ba9-6579-410f-8aee-eb090463a095",
+          "reference" : "495fec76-09e6-4899-bc8c-0be8424caa12",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "container",
+                "type" : "component",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -137,95 +137,39 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
                   },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
                   },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Interview Impression"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
-                "reference" : "5ba2a38b-88db-4e27-8867-53ac39664fe7",
+                "reference" : "326b868e-f285-4175-b2de-a4349dcce833",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "CV"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.cv"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "a7cea1a5-99ab-41e1-8092-579a211ca7c8",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
+                "id" : "pbTitle",
+                "description" : ""
               }
             ],
             [
@@ -254,7 +198,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9199e1a2-81a8-4953-a70d-1be8969a5c51",
+                "reference" : "17f67fc7-53e3-495c-b491-ebac5c42a026",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -262,10 +206,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 6,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -286,15 +230,22 @@
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 4
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Cover Letter"
+                          "value" : "Rating"
                         },
                         "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
                           "type" : "constant",
-                          "value" : "Browse to upload a new file..."
+                          "value" : "number"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -302,28 +253,156 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.coverLetter"
+                          "value" : "interviewImpression.rating"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
                         },
-                        "url" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : "../API/formFileUpload"
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "max" : {
+                          "type" : "constant",
+                          "value" : 5
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "521e718c-dc80-41cc-b2a2-f7fcf503a0b7",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "I Recommend (uncheck if you don't recommend)"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "interviewImpression.isRecommended"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "65da5347-484a-44d3-9aa1-9e051b32f4d2",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "errorContent" : {
-                          "type" : "variable"
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Personal Impression"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "interviewImpression.personalImpression"
                         }
                       },
-                      "reference" : "b1315704-78e0-4324-b2ea-4a924655bd2d",
+                      "reference" : "594b9b96-98b9-49dc-ba07-ef14f21ef025",
                       "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
+                      "id" : "pbTextarea"
                     }
                   ]
                 ]
@@ -404,7 +483,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7477b8e3-d4c8-405b-a9c7-daf1501ba9e7",
+                "reference" : "fa4e8239-6fcf-4b84-be54-3e563bc44a59",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -456,7 +535,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a15632c5-95f2-4456-96f8-2c45d7534ccf",
+                "reference" : "ff3b4555-e853-4b30-9f11-95ddff7620c9",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -469,14 +548,14 @@
   ],
   "assets" : [
     {
-      "id" : "6d62165e-b2c4-4dd4-b6ba-9adac410f408",
+      "id" : "b2fd824d-7633-4bd2-be80-5baeb57a0fe1",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "1d8adfcb-64ac-422e-a711-77e3e26647b1",
+      "id" : "d229488c-56f3-4879-9ae3-51f7b8c63f35",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -489,15 +568,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \r",
-        "}"
       ],
       "exposed" : false
     },
@@ -516,12 +586,25 @@
       ],
       "exposed" : false
     },
+    "interviewImpression" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.interviewImpression_ref.link}}"
+      ],
+      "exposed" : false
+    },
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tcv: $data.formInput.cv,",
-        "\tcoverLetter: $data.formInput.coverLetter",
+        "if( $data.interviewImpression ){",
+        "\treturn {",
+        "\t\t//map interviewImpression variable to expected task contract input",
+        "\t\tinterviewImpressionInput: {",
+        "\t\t\trating: $data.interviewImpression.rating !== undefined ? $data.interviewImpression.rating : null,",
+        "\t\t\tisRecommended: $data.interviewImpression.isRecommended !== undefined ? $data.interviewImpression.isRecommended : null,",
+        "\t\t\tpersonalImpression: $data.interviewImpression.personalImpression !== undefined ? $data.interviewImpression.personalImpression : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -542,7 +625,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "7a81721c-7c58-48e2-a01a-530dc0e75239",
+  "uuid" : "c5ab2eb0-e155-412b-bd4f-89d94ce7ba0a",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

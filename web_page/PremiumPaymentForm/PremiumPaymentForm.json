@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "CVCoverLetterForm",
-  "name" : "CVCoverLetterForm",
-  "lastUpdate" : 1671883445246,
+  "id" : "PremiumPaymentForm",
+  "name" : "PremiumPaymentForm",
+  "lastUpdate" : 1671885501114,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2164b8be-83cc-4a30-ad6f-542c9d59dba6",
+        "reference" : "ecffe7a4-6a7f-4006-b1d8-b046e5623976",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b2adbd06-f592-4233-800d-5414d0533a2a",
+              "reference" : "c9b63c5c-f39d-4d21-82c7-7c38705b39ef",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f742f611-9fe1-4e1c-bbfe-ac91df447667",
+              "reference" : "e247b2bf-5acb-4822-85e2-9821f8997be7",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "06fb46d7-242f-4a6b-832e-2eb63b7042a8",
+        "reference" : "c4d68dd4-c8b4-4751-97da-49deb751ef97",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,210 +123,60 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "a1ea3ba9-6579-410f-8aee-eb090463a095",
+          "reference" : "b24a199b-e20d-47b5-9e6d-5bab3bf85d67",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "container",
+                "type" : "component",
                 "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
                   "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "cssClasses" : {
+                  "allowHTML" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : true
                   },
-                  "dimension" : {
+                  "labelHidden" : {
                     "type" : "constant",
-                    "value" : 12
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<h3>\nClick the button below to simulate payment\n</h3>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
                   }
                 },
-                "reference" : "5ba2a38b-88db-4e27-8867-53ac39664fe7",
+                "reference" : "cdd19a36-afff-4691-a3f8-e39350a18775",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "CV"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.cv"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "a7cea1a5-99ab-41e1-8092-579a211ca7c8",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "9199e1a2-81a8-4953-a70d-1be8969a5c51",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Cover Letter"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.coverLetter"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "b1315704-78e0-4324-b2ea-4a924655bd2d",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
+                "id" : "pbText"
               }
             ],
             [
@@ -404,7 +254,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7477b8e3-d4c8-405b-a9c7-daf1501ba9e7",
+                "reference" : "538e9fe2-ac13-4d86-ac3d-59bb79479da9",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -456,7 +306,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a15632c5-95f2-4456-96f8-2c45d7534ccf",
+                "reference" : "2dd2dfdc-bd30-4ab1-a116-3a2d01e2c987",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -469,16 +319,16 @@
   ],
   "assets" : [
     {
-      "id" : "6d62165e-b2c4-4dd4-b6ba-9adac410f408",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "1d692c70-33d8-4a1c-a9d0-e56a9e2ead12",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "1d8adfcb-64ac-422e-a711-77e3e26647b1",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "cb6af17b-d603-401a-ae57-34982bc29c79",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -489,15 +339,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \r",
-        "}"
       ],
       "exposed" : false
     },
@@ -520,8 +361,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tcv: $data.formInput.cv,",
-        "\tcoverLetter: $data.formInput.coverLetter",
+        "",
         "}"
       ],
       "exposed" : false
@@ -542,7 +382,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "7a81721c-7c58-48e2-a01a-530dc0e75239",
+  "uuid" : "8f72999a-d198-4922-a402-7c9e83554997",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "CVCoverLetterForm",
-  "name" : "CVCoverLetterForm",
-  "lastUpdate" : 1671883445246,
+  "id" : "PremiumDocumentsUploadForm",
+  "name" : "PremiumDocumentsUploadForm",
+  "lastUpdate" : 1671897570589,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2164b8be-83cc-4a30-ad6f-542c9d59dba6",
+        "reference" : "25720411-0009-4968-9543-889192d9b985",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b2adbd06-f592-4233-800d-5414d0533a2a",
+              "reference" : "af5974e7-d921-44cd-a0b1-f28a5d0a8441",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f742f611-9fe1-4e1c-bbfe-ac91df447667",
+              "reference" : "c5bb8fe3-adb5-4856-8a31-5558d43026ca",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "06fb46d7-242f-4a6b-832e-2eb63b7042a8",
+        "reference" : "5d9c9476-7fc7-4a92-bfb5-af4a713ec4dd",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "a1ea3ba9-6579-410f-8aee-eb090463a095",
+          "reference" : "2aa50e2c-85ac-436f-9479-57595260539b",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -153,7 +153,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "5ba2a38b-88db-4e27-8867-53ac39664fe7",
+                "reference" : "d450d51d-388d-4923-a0a8-58b92749f266",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -219,7 +219,7 @@
                           "type" : "variable"
                         }
                       },
-                      "reference" : "a7cea1a5-99ab-41e1-8092-579a211ca7c8",
+                      "reference" : "169caefd-7037-4fb6-a31b-0db3096bdc0e",
                       "hasValidationError" : false,
                       "id" : "pbUpload",
                       "description" : ""
@@ -254,7 +254,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9199e1a2-81a8-4953-a70d-1be8969a5c51",
+                "reference" : "470b15e5-6779-4a43-8ae3-82e99808b954",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -320,7 +320,7 @@
                           "type" : "variable"
                         }
                       },
-                      "reference" : "b1315704-78e0-4324-b2ea-4a924655bd2d",
+                      "reference" : "4329afe1-5640-4fdc-9bde-9ce312f9c813",
                       "hasValidationError" : false,
                       "id" : "pbUpload",
                       "description" : ""
@@ -404,7 +404,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7477b8e3-d4c8-405b-a9c7-daf1501ba9e7",
+                "reference" : "046b9a50-27d0-4503-aae0-c4b449142af3",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -456,7 +456,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a15632c5-95f2-4456-96f8-2c45d7534ccf",
+                "reference" : "0ab4d384-435e-45e8-b03a-91fc64293242",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -469,16 +469,16 @@
   ],
   "assets" : [
     {
-      "id" : "6d62165e-b2c4-4dd4-b6ba-9adac410f408",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "ec1a8856-1bbd-4732-b6b1-d8dd8b5aed94",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "1d8adfcb-64ac-422e-a711-77e3e26647b1",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "32bdf89f-266a-4480-9ac8-14db9edca2c7",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -496,7 +496,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \r",
+        "\r",
         "}"
       ],
       "exposed" : false
@@ -542,7 +542,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "7a81721c-7c58-48e2-a01a-530dc0e75239",
+  "uuid" : "3e0698af-ccfb-4fcb-afa8-2aa29c4311de",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
