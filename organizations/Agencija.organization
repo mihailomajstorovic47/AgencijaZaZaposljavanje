@@ -202,6 +202,32 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="companyHrEmployee">
+      <firstName>Company HR</firstName>
+      <lastName>Employee</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="companyHrBoss">
+      <firstName>Company HR</firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -355,6 +381,18 @@
       <roleName>Member</roleName>
       <groupName>ProjectTeam</groupName>
       <groupParentPath>/Agency/Company1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>companyHrEmployee</userName>
+      <roleName>Member</roleName>
+      <groupName>Employee</groupName>
+      <groupParentPath>/Agency/Company1/HR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>companyHrBoss</userName>
+      <roleName>Member</roleName>
+      <groupName>Boss</groupName>
+      <groupParentPath>/Agency/Company1/HR</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
