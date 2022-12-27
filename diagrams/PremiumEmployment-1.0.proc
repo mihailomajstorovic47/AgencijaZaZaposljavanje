@@ -742,20 +742,20 @@
               <referencedElements xmi:type="process:Data" xmi:id="_fDr88IPFEe2ZqIT9hQaBBg" name="selectedEmployee" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_eSsk4oPFEe2ZqIT9hQaBBg" name="newScript()" content="import com.agency.model.InterviewImpression&#xD;&#xA;&#xD;&#xA;boolean hr = false;&#xD;&#xA;boolean premium = false;&#xD;&#xA;boolean p1 = false;&#xD;&#xA;boolean p2 = false;&#xD;&#xA;if (hrRecommends.equalsIgnoreCase(&quot;yes&quot;)){&#xD;&#xA;&#x9;hr = true;&#xD;&#xA;}&#xD;&#xA;if (project1Recommends.equalsIgnoreCase(&quot;yes&quot;)){&#xD;&#xA;&#x9;p1 = true;&#xD;&#xA;}&#xD;&#xA;if (project2Recommends.equalsIgnoreCase(&quot;yes&quot;)){&#xD;&#xA;&#x9;p2 = true;&#xD;&#xA;}&#xD;&#xA;if (premiumRecommends.equalsIgnoreCase(&quot;yes&quot;)){&#xD;&#xA;&#x9;premium = true;&#xD;&#xA;}&#xD;&#xA;InterviewImpression hrii = new InterviewImpression();&#xD;&#xA;InterviewImpression pii1 = new InterviewImpression();&#xD;&#xA;InterviewImpression pii2 = new InterviewImpression();&#xD;&#xA;InterviewImpression premiumii = new InterviewImpression();&#xD;&#xA;hrii.setIsRecommended(hr);&#xD;&#xA;pii1.setIsRecommended(p1);&#xD;&#xA;pii2.setIsRecommended(p2);&#xD;&#xA;premiumii.setIsRecommended(premium);&#xD;&#xA;hrii.setPersonalImpression(hrImpression);&#xD;&#xA;hrii.setRating(hrRating);&#xD;&#xA;pii1.setPersonalImpression(project1Impression);&#xD;&#xA;pii1.setRating(project1Rating);&#xD;&#xA;pii2.setPersonalImpression(project2Impression);&#xD;&#xA;pii2.setRating(project2Rating);&#xD;&#xA;premiumii.setPersonalImpression(premiumImpression);&#xD;&#xA;premiumii.setRating(premiumRating);&#xD;&#xA;premiumRequest.interviewImpressions.add(hrii);&#xD;&#xA;premiumRequest.interviewImpressions.add(pii1);&#xD;&#xA;premiumRequest.interviewImpressions.add(pii2);&#xD;&#xA;premiumRequest.interviewImpressions.add(premiumii);&#xD;&#xA;&#xD;&#xA;return selectedEmployee;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlMIPxEe2ZqIT9hQaBBg" name="hrRecommends" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlMYPxEe2ZqIT9hQaBBg" name="project1Recommends" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlMoPxEe2ZqIT9hQaBBg" name="project1Impression" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlM4PxEe2ZqIT9hQaBBg" name="selectedEmployee" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlNIPxEe2ZqIT9hQaBBg" name="project1Rating" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlNYPxEe2ZqIT9hQaBBg" name="project2Impression" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlNoPxEe2ZqIT9hQaBBg" name="project2Rating" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlN4PxEe2ZqIT9hQaBBg" name="project2Recommends" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlOIPxEe2ZqIT9hQaBBg" name="hrImpression" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlOYPxEe2ZqIT9hQaBBg" name="premiumImpression" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlOoPxEe2ZqIT9hQaBBg" name="hrRating" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="__wAlO4PxEe2ZqIT9hQaBBg" name="premiumRequest" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.PremiumRequest"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlPIPxEe2ZqIT9hQaBBg" name="premiumRecommends" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:Data" xmi:id="__wAlPYPxEe2ZqIT9hQaBBg" name="premiumRating" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do4jMIWDEe2ubsacwS4RQw" name="hrRecommends" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do4jMYWDEe2ubsacwS4RQw" name="project1Recommends" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do4jMoWDEe2ubsacwS4RQw" name="project1Impression" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do4jM4WDEe2ubsacwS4RQw" name="selectedEmployee" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do4jNIWDEe2ubsacwS4RQw" name="project1Rating" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do4jNYWDEe2ubsacwS4RQw" name="project2Impression" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do4jNoWDEe2ubsacwS4RQw" name="project2Rating" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do5KQIWDEe2ubsacwS4RQw" name="project2Recommends" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do5KQYWDEe2ubsacwS4RQw" name="hrImpression" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do5KQoWDEe2ubsacwS4RQw" name="premiumImpression" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do5KQ4WDEe2ubsacwS4RQw" name="hrRating" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_do5KRIWDEe2ubsacwS4RQw" name="premiumRequest" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.PremiumRequest"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do5KRYWDEe2ubsacwS4RQw" name="premiumRecommends" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_do5KRoWDEe2ubsacwS4RQw" name="premiumRating" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_eSsk44PFEe2ZqIT9hQaBBg" type="ASSIGNMENT"/>
           </operations>
@@ -767,7 +767,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_VloAgHTyEe2YhMCdrgj4vg" name="PremiumBoss" actor="_uICt23TvEe2YhMCdrgj4vg">
-        <elements xmi:type="process:Task" xmi:id="_uFPfIHT0Ee2YhMCdrgj4vg" name="Picking an premium team employee" outgoing="_jCbDMIOgEe2ZqIT9hQaBBg" incoming="_vTCH8HT0Ee2YhMCdrgj4vg" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_uFPfIHT0Ee2YhMCdrgj4vg" name="Picking a premium team employee" outgoing="_jCbDMIOgEe2ZqIT9hQaBBg" incoming="_vTCH8HT0Ee2YhMCdrgj4vg" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_uFQGMXT0Ee2YhMCdrgj4vg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_uFQGMHT0Ee2YhMCdrgj4vg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_uFQGMnT0Ee2YhMCdrgj4vg" name="" content="" returnTypeFixed="true"/>
@@ -836,6 +836,70 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_QIDq8nT6Ee2YhMCdrgj4vg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_QIDq8XT6Ee2YhMCdrgj4vg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_QIDq83T6Ee2YhMCdrgj4vg" name="" content="" returnTypeFixed="true"/>
+          <connectors xmi:type="process:Connector" xmi:id="_NmkrQIWFEe2ubsacwS4RQw" name="RejectCandidate" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_NmkrQYWFEe2ubsacwS4RQw" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrQoWFEe2ubsacwS4RQw" key="smtpHost">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrQ4WFEe2ubsacwS4RQw" name="localhost" content="localhost" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrRIWFEe2ubsacwS4RQw" key="smtpPort">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrRYWFEe2ubsacwS4RQw" name="2525" content="2525" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrRoWFEe2ubsacwS4RQw" key="sslSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrR4WFEe2ubsacwS4RQw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrSIWFEe2ubsacwS4RQw" key="starttlsSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrSYWFEe2ubsacwS4RQw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrSoWFEe2ubsacwS4RQw" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrS4WFEe2ubsacwS4RQw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrTIWFEe2ubsacwS4RQw" key="userName">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrTYWFEe2ubsacwS4RQw" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrToWFEe2ubsacwS4RQw" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrT4WFEe2ubsacwS4RQw" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrUIWFEe2ubsacwS4RQw" key="from">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrUYWFEe2ubsacwS4RQw" name="no-replu@acme.com" content="no-replu@acme.com" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrUoWFEe2ubsacwS4RQw" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrU4WFEe2ubsacwS4RQw" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrVIWFEe2ubsacwS4RQw" key="to">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrVYWFEe2ubsacwS4RQw" name="to()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy());&#xD;&#xA;&#x9;return apiAccessor.getIdentityAPI().getUserContactData(processInitiator.id, false).email;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;}catch(UserNotFoundException e){&#xD;&#xA;&#x9;// Handle UserNotFoundException here&#xD;&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xD;&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_NmkrVoWFEe2ubsacwS4RQw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_NmkrV4WFEe2ubsacwS4RQw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrWIWFEe2ubsacwS4RQw" key="bcc">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrWYWFEe2ubsacwS4RQw" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrWoWFEe2ubsacwS4RQw" key="cc">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrW4WFEe2ubsacwS4RQw" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrXIWFEe2ubsacwS4RQw" key="subject">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrXYWFEe2ubsacwS4RQw" name="Company rejected you" content="Company rejected you" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrXoWFEe2ubsacwS4RQw" key="html">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrX4WFEe2ubsacwS4RQw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrYIWFEe2ubsacwS4RQw" key="message">
+                <expression xmi:type="expression:Expression" xmi:id="_NmkrYYWFEe2ubsacwS4RQw" name="&lt;pattern-expression>" content="&lt;p>Company rejected you. We will start working on another company, if there are more.&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmkrYoWFEe2ubsacwS4RQw" key="headers">
+                <expression xmi:type="expression:TableExpression" xmi:id="_NmlSUIWFEe2ubsacwS4RQw"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmlSUYWFEe2ubsacwS4RQw" key="charset">
+                <expression xmi:type="expression:Expression" xmi:id="_NmlSUoWFEe2ubsacwS4RQw" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmlSU4WFEe2ubsacwS4RQw" key="replyTo">
+                <expression xmi:type="expression:Expression" xmi:id="_NmlSVIWFEe2ubsacwS4RQw" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_NmlSVYWFEe2ubsacwS4RQw" key="attachments">
+                <expression xmi:type="expression:ListExpression" xmi:id="_NmlSVoWFEe2ubsacwS4RQw"/>
+              </parameters>
+            </configuration>
+          </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_QIDq9HT6Ee2YhMCdrgj4vg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_QIDq9XT6Ee2YhMCdrgj4vg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_QIDq9nT6Ee2YhMCdrgj4vg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -950,9 +1014,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_rM2eI4OMEe2ZqIT9hQaBBg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rM2eJIOMEe2ZqIT9hQaBBg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_rM2eJYOMEe2ZqIT9hQaBBg" name="to()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy());&#xD;&#xA;&#x9;return apiAccessor.getIdentityAPI().getUserContactData(processInitiator, false).email;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;}catch(UserNotFoundException e){&#xD;&#xA;&#x9;// Handle UserNotFoundException here&#xD;&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xD;&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xD;&#xA;&#x9;return apiAccessor.getIdentityAPI().getUserContactData(apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy()), false).email;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_RlwFQIPSEe2ZqIT9hQaBBg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_RlwFQYPSEe2ZqIT9hQaBBg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                <expression xmi:type="expression:Expression" xmi:id="_rM2eJYOMEe2ZqIT9hQaBBg" name="to()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy());&#xD;&#xA;&#x9;return apiAccessor.getIdentityAPI().getUserContactData(processInitiator.id, false).email;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;}catch(UserNotFoundException e){&#xD;&#xA;&#x9;// Handle UserNotFoundException here&#xD;&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xD;&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_ERkyIIWCEe2ubsacwS4RQw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_ERkyIYWCEe2ubsacwS4RQw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rM2eKIOMEe2ZqIT9hQaBBg" key="bcc">
@@ -989,11 +1053,11 @@
               <referencedElements xmi:type="process:Data" xmi:id="_80m58IPDEe2ZqIT9hQaBBg" name="giveUp" dataType="_uICt7HTvEe2YhMCdrgj4vg"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_7VWtsoPDEe2ZqIT9hQaBBg" name="newScript()" content="import com.agency.model.Company&#xD;&#xA;import com.agency.model.InterviewImpression&#xD;&#xA;&#xD;&#xA;import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;&#xD;&#xA;ArrayList&lt;Company> coms = (ArrayList)potentialCompaniesList;&#xD;&#xA;long companyId = coms.get(companyCounter).persistenceId;&#xD;&#xA;&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy());&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;premiumRequest.clientId = processInitiator.id;&#xD;&#xA;&#x9;premiumRequest.employmentCompanyId = null;&#xD;&#xA;&#x9;premiumRequest.interviewImpressions = new ArrayList&lt;InterviewImpression>();&#xD;&#xA;&#x9;premiumRequest.successful = false;&#xD;&#xA;&#x9;for (int i = 0; i &lt; coms.size(); i++){&#xD;&#xA;&#x9;&#x9;premiumRequest.potentialCompaniesIds.add(coms.get(i).persistenceId);&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return false;&#xD;&#xA;}catch(UserNotFoundException e){&#xD;&#xA;&#x9;// Handle UserNotFoundException here&#xD;&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xD;&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xD;&#xA;}&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_spCi4IPGEe2ZqIT9hQaBBg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_spCi4YPGEe2ZqIT9hQaBBg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_spCi4oPGEe2ZqIT9hQaBBg" name="premiumRequest" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.PremiumRequest"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_spCi44PGEe2ZqIT9hQaBBg" name="potentialCompaniesList" multiple="true" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.Company"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_spCi5IPGEe2ZqIT9hQaBBg" name="companyCounter" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_UwwPcIWEEe2ubsacwS4RQw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_UwwPcYWEEe2ubsacwS4RQw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UwwPcoWEEe2ubsacwS4RQw" name="premiumRequest" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.PremiumRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UwwPc4WEEe2ubsacwS4RQw" name="potentialCompaniesList" multiple="true" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.Company"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_UwwPdIWEEe2ubsacwS4RQw" name="companyCounter" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_7VWts4PDEe2ZqIT9hQaBBg" type="ASSIGNMENT"/>
           </operations>
@@ -1092,11 +1156,13 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_tVsm0YPBEe2ZqIT9hQaBBg" name="selectedEmployee" content="selectedEmployee" type="TYPE_VARIABLE">
               <referencedElements xmi:type="process:Data" xmi:id="_weIXYIPBEe2ZqIT9hQaBBg" name="selectedEmployee" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_tVsm0oPBEe2ZqIT9hQaBBg" name="newScript()" content="import com.agency.model.Company&#xD;&#xA;import com.agency.model.InterviewImpression&#xD;&#xA;&#xD;&#xA;ArrayList&lt;Company> coms = (ArrayList)potentialCompaniesList;&#xD;&#xA;long companyId = coms.get(companyCounter).persistenceId;&#xD;&#xA;premiumRequest.successful = true;&#xD;&#xA;premiumRequest.employmentCompanyId = companyId;&#xD;&#xA;&#xD;&#xA;return selectedEmployee;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_u-6OEIPGEe2ZqIT9hQaBBg" name="potentialCompaniesList" multiple="true" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.Company"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_u-6OEYPGEe2ZqIT9hQaBBg" name="companyCounter" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_u-61IIPGEe2ZqIT9hQaBBg" name="premiumRequest" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.PremiumRequest"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_u-61IYPGEe2ZqIT9hQaBBg" name="selectedEmployee" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_tVsm0oPBEe2ZqIT9hQaBBg" name="newScript()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;import com.agency.model.Client&#xD;&#xA;import com.agency.model.Company&#xD;&#xA;import com.agency.model.InterviewImpression&#xD;&#xA;&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy());&#xD;&#xA;&#x9;List &lt;Company> coms = potentialCompaniesList;&#xD;&#xA;&#x9;long companyId = coms.get(companyCounter).persistenceId;&#xD;&#xA;&#x9;premiumRequest.successful = true;&#xD;&#xA;&#x9;premiumRequest.employmentCompanyId = companyId;&#xD;&#xA;&#x9;//companyDAO.findByPersistenceId(companyId).employees.addToEmployees(clientDAO.findByUsername(processInitiator.userName, 0, 1).get(0));&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;return selectedEmployee;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;}catch(UserNotFoundException e){&#xD;&#xA;&#x9;// Handle UserNotFoundException here&#xD;&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xD;&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xD;&#xA;}&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_2zL78IXlEe259omTAR5HYA" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_2zL78YXlEe259omTAR5HYA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_2zL78oXlEe259omTAR5HYA" name="selectedEmployee" dataType="_uICt8XTvEe2YhMCdrgj4vg"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_2zL784XlEe259omTAR5HYA" name="premiumRequest" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.PremiumRequest"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_2zL79IXlEe259omTAR5HYA" name="potentialCompaniesList" multiple="true" dataType="_uICt9HTvEe2YhMCdrgj4vg" className="com.agency.model.Company"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_2zL79YXlEe259omTAR5HYA" name="companyCounter" dataType="_uICt7nTvEe2YhMCdrgj4vg"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_tVsm04PBEe2ZqIT9hQaBBg" type="ASSIGNMENT"/>
           </operations>
@@ -1545,6 +1611,21 @@
       </data>
       <data xmi:type="process:Data" xmi:id="_Co0CgIPrEe2ZqIT9hQaBBg" name="premiumRecommends" dataType="_uICt8XTvEe2YhMCdrgj4vg">
         <defaultValue xmi:type="expression:Expression" xmi:id="_Co0CgYPrEe2ZqIT9hQaBBg" name="init_premiumRecommends()" content="''" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_2TSRsIXWEe259omTAR5HYA" name="premiumEmployeeGroupId" dataType="_uICt73TvEe2YhMCdrgj4vg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_2TSRsYXWEe259omTAR5HYA" name="init_premuimEmployeeGroupId()" content="apiAccessor.getIdentityAPI().getGroupByPath(&quot;/Agency/PremiumEmployment/Employee&quot;).id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_Ut358IXZEe259omTAR5HYA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_Ivu-4IXXEe259omTAR5HYA" name="projectGroupId" dataType="_uICt73TvEe2YhMCdrgj4vg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Ivu-4YXXEe259omTAR5HYA" name="init_projectGroupId()" content="apiAccessor.getIdentityAPI().getGroupByPath(&quot;/Agency/Company1/ProjectTeam&quot;).id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_StF_4IXXEe259omTAR5HYA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_LIcisIXXEe259omTAR5HYA" name="hrEmployeeGroupId" dataType="_uICt73TvEe2YhMCdrgj4vg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_LIcisYXXEe259omTAR5HYA" name="init_hrEmployeeGroupId()" content="apiAccessor.getIdentityAPI().getGroupByPath(&quot;/Agency/Company1/HR/Employee&quot;).id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_XlqRUIXXEe259omTAR5HYA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_uICt1HTvEe2YhMCdrgj4vg">
         <targetForm xmi:type="expression:Expression" xmi:id="_HDp0kIOHEe2ZqIT9hQaBBg" name="PremiumEmploymentTermsForm" content="4750f654-caae-44d0-ac0a-12d8a7be3caa" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

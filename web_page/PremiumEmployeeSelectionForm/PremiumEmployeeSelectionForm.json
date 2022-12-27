@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "PremiumEmployeeSelectionForm",
   "name" : "PremiumEmployeeSelectionForm",
-  "lastUpdate" : 1671886111676,
+  "lastUpdate" : 1672139860631,
   "rows" : [
     [
       {
@@ -412,7 +412,14 @@
     "employees" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&fgroup_id=0"
+        "../API/identity/user?p=0&c=100&f=group_id={{groupId.value}}"
+      ],
+      "exposed" : false
+    },
+    "groupId" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/premiumEmployeeGroupId"
       ],
       "exposed" : false
     }

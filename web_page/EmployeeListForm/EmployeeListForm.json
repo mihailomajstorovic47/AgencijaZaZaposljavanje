@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "EmployeeListForm",
   "name" : "EmployeeListForm",
-  "lastUpdate" : 1671838349064,
+  "lastUpdate" : 1672114696838,
   "rows" : [
     [
       {
@@ -48,6 +48,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "28c2cb93-696c-4d5c-856e-0c9d653688f4",
@@ -412,7 +416,14 @@
     "employees" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&fgroup_id=0"
+        "../API/identity/user?p=0&c=100&f=group_id={{groupId.value}}"
+      ],
+      "exposed" : false
+    },
+    "groupId" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/companyHandlingGroupId"
       ],
       "exposed" : false
     }

@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "PacketAnalysisForm",
   "name" : "PacketAnalysisForm",
-  "lastUpdate" : 1672061308944,
+  "lastUpdate" : 1672101783215,
   "rows" : [
     [
       {
@@ -117,7 +117,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "5f8c0281-ea46-412d-9f06-ecdc1a661790",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -137,8 +146,8 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
+                  "md" : 6,
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -179,6 +188,56 @@
                   }
                 },
                 "reference" : "c1dc80ea-7c98-4a22-bbfe-c55859d405cc",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<h3>Number of workers: {{workersNum.value}} </h3>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "02c9d7ed-2e1f-4966-b12a-7d1045b38be6",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -673,6 +732,13 @@
       "type" : "url",
       "value" : [
         "../API/bpm/caseVariable/{{task.caseId}}/budget"
+      ],
+      "exposed" : false
+    },
+    "workersNum" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/numberOfWorkers"
       ],
       "exposed" : false
     }

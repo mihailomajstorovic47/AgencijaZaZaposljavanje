@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "PacketOfferForm",
   "name" : "PacketOfferForm",
-  "lastUpdate" : 1672061140202,
+  "lastUpdate" : 1672102067893,
   "rows" : [
     [
       {
@@ -48,6 +48,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "3b0a1fd0-911a-4962-86bd-b1dbc024b00a",
@@ -96,6 +100,18 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
                 }
               },
               "reference" : "10ac8aa8-bb21-43d0-9e4e-e5b1307d6103",
@@ -113,7 +129,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "b53da3f1-094a-4b52-b188-aaaffad824ad",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -131,10 +156,190 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<h3>Number of workers: {{workersNum.value}} </h3>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "a15d965e-a57e-4982-91e8-4789d69dec14",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<h3>Updated number of workers: {{workersNum.value}} </h3>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "084f95b7-13f4-4ad9-9e72-7d4a7fb3921b",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 4,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<h3>Requested budget: {{budget.value}} EUR</h3>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "f9c73382-373a-4053-a362-ac756a985cdf",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 3,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "06a1d571-c7de-476d-83cf-545fc2ec9ceb",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [ ]
+                ]
+              },
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 6,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 6
+                  "lg" : 4
                 },
                 "propertyValues" : {
                   "labelHidden" : {
@@ -213,12 +418,12 @@
                 "description" : ""
               },
               {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 6,
-                  "lg" : 6
+                  "md" : 3,
+                  "lg" : 4
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -229,38 +434,16 @@
                     "type" : "constant",
                     "value" : false
                   },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "<h3>Requested budget: {{budget.value}} EUR</h3>"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "center"
+                  "repeatedCollection" : {
+                    "type" : "variable"
                   }
                 },
-                "reference" : "f9c73382-373a-4053-a362-ac756a985cdf",
+                "reference" : "5a9e5998-be47-40d8-8bdc-ad733bce9095",
                 "hasValidationError" : false,
-                "id" : "pbText"
+                "id" : "pbContainer",
+                "rows" : [
+                  [ ]
+                ]
               }
             ],
             [
@@ -788,6 +971,20 @@
       "type" : "url",
       "value" : [
         "../API/bpm/caseVariable/{{task.caseId}}/budget"
+      ],
+      "exposed" : false
+    },
+    "workersNum" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/numberOfWorkers"
+      ],
+      "exposed" : false
+    },
+    "workersNumChanged" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/changedNumberOfWorkers"
       ],
       "exposed" : false
     }

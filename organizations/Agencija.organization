@@ -10,8 +10,12 @@
     <user userName="nevenaatic">
       <firstName>Nevena</firstName>
       <lastName>Atic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>nevena@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>nevena@gmail.com</email>
+      </professionalData>
       <password encrypted="false">nevena</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -23,8 +27,12 @@
     <user userName="newcompany">
       <firstName>New</firstName>
       <lastName>Company</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>newCompany@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>newCompany@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -36,8 +44,12 @@
     <user userName="milosmarkovic">
       <firstName>Milos</firstName>
       <lastName>Markovic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>milos@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>milos@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -49,8 +61,12 @@
     <user userName="petarmarkovic">
       <firstName>Petar</firstName>
       <lastName>Markovic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>petar@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>petar@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -62,8 +78,12 @@
     <user userName="mladenvasic">
       <firstName>Mladen</firstName>
       <lastName>Vasic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>mladen@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>mladen@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -75,8 +95,12 @@
     <user userName="Company1">
       <firstName>Company</firstName>
       <lastName>One</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>nova@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>nova@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -88,8 +112,12 @@
     <user userName="filipmarkovic">
       <firstName>Filip</firstName>
       <lastName>Markovic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>filipmarkovic@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>filipmarkovic@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -101,8 +129,12 @@
     <user userName="nemanjaradojcic">
       <firstName>Nemanja</firstName>
       <lastName>Radojcic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>nemanja@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>nemanja@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -114,8 +146,12 @@
     <user userName="coa">
       <firstName>Aleksandar</firstName>
       <lastName>Milesevic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>coa1@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>coa1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -127,8 +163,12 @@
     <user userName="laura">
       <firstName>Laura</firstName>
       <lastName>Aleksic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>laura@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>laura@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -140,8 +180,12 @@
     <user userName="kisic">
       <firstName>Mihajlo</firstName>
       <lastName>Kisic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>mihajlo@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>mihajlo@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -153,8 +197,12 @@
     <user userName="hrboss">
       <firstName>HrBoss</firstName>
       <lastName>HrBoss</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>hrBoss@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>hrBoss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -166,8 +214,12 @@
     <user userName="hremployee">
       <firstName>HrEmployee</firstName>
       <lastName>HrEmployee</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>hremployee@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>hremployee@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -179,8 +231,12 @@
     <user userName="project1">
       <firstName>Project 1</firstName>
       <lastName>Manager</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>project1@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>project1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -192,8 +248,12 @@
     <user userName="project2">
       <firstName>Project 2</firstName>
       <lastName>Manager</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>project2@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>project2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -205,8 +265,12 @@
     <user userName="companyHrEmployee">
       <firstName>Company HR</firstName>
       <lastName>Employee</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>companyHrEmployee@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>companyHrEmployee@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -218,8 +282,29 @@
     <user userName="companyHrBoss">
       <firstName>Company HR</firstName>
       <lastName>Boss</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>companyHrBoss@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>companyHrBoss@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>cv</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="companyBoss">
+      <firstName>Company</firstName>
+      <lastName>Boss</lastName>
+      <personalData>
+        <email>companyBoss@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>companyBoss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -393,6 +478,12 @@
       <roleName>Member</roleName>
       <groupName>Boss</groupName>
       <groupParentPath>/Agency/Company1/HR</groupParentPath>
+    </membership>
+    <membership>
+      <userName>companyBoss</userName>
+      <roleName>Member</roleName>
+      <groupName>Boss</groupName>
+      <groupParentPath>/Agency/Company1</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

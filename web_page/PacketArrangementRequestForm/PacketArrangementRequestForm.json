@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "PacketArrangementRequestForm",
   "name" : "PacketArrangementRequestForm",
-  "lastUpdate" : 1672053925312,
+  "lastUpdate" : 1672101479684,
   "rows" : [
     [
       {
@@ -203,10 +203,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 4,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -283,16 +283,14 @@
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    }
-                  ],
-                  [
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 3,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -321,7 +319,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Working Experience"
+                          "value" : "Working Experience (years)"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -370,16 +368,14 @@
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
-                    }
-                  ],
-                  [
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
+                        "md" : 5,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "cssClasses" : {

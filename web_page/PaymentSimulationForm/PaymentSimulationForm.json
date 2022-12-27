@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "PaymentSimulationForm",
   "name" : "PaymentSimulationForm",
-  "lastUpdate" : 1672059102731,
+  "lastUpdate" : 1672095273233,
   "rows" : [
     [
       {
@@ -105,6 +105,46 @@
             }
           ]
         ]
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : "context.invoice_ref"
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "be461493-aef1-4d57-97e9-b01cc5f39322",
+        "hasValidationError" : false,
+        "id" : "pbFileViewer"
       }
     ],
     [

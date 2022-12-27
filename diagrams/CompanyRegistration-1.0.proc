@@ -93,7 +93,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_cdQJAXTZEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_cdQJAHTZEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_cdQJAnTZEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_w9gLMIIlEe2SSJkwzaPlrA" name="Accept Company" definitionId="email" event="ON_ENTER" definitionVersion="1.2.0">
+          <connectors xmi:type="process:Connector" xmi:id="_w9gLMIIlEe2SSJkwzaPlrA" name="Accept Company" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_w9gLMYIlEe2SSJkwzaPlrA" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_w9gLMoIlEe2SSJkwzaPlrA" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_w9gLM4IlEe2SSJkwzaPlrA" name="localhost" content="localhost" returnTypeFixed="true"/>
@@ -166,7 +166,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_P3POQXTaEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_P3POQHTaEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_P3POQnTaEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_kc38MIIlEe2SSJkwzaPlrA" name="Reject Company" definitionId="email" event="ON_ENTER" definitionVersion="1.2.0">
+          <connectors xmi:type="process:Connector" xmi:id="_kc38MIIlEe2SSJkwzaPlrA" name="Reject Company" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_kc38MYIlEe2SSJkwzaPlrA" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_kc38MoIlEe2SSJkwzaPlrA" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_kc38M4IlEe2SSJkwzaPlrA" name="localhost" content="localhost" returnTypeFixed="true"/>
@@ -410,7 +410,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Mk-W0XTbEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Mk-W0HTbEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Mk-W0nTbEe2ebue_Fgl6Gw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_10Qi8IIeEe2SSJkwzaPlrA" name="Send notification" definitionId="email" event="ON_ENTER" definitionVersion="1.2.0">
+          <connectors xmi:type="process:Connector" xmi:id="_10Qi8IIeEe2SSJkwzaPlrA" name="Send notification" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_10Qi8YIeEe2SSJkwzaPlrA" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_10Qi8oIeEe2SSJkwzaPlrA" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_10Qi84IeEe2SSJkwzaPlrA" name="localhost" content="localhost" returnTypeFixed="true"/>
@@ -641,6 +641,11 @@
       </data>
       <data xmi:type="process:Data" xmi:id="_FSmY4IIiEe2SSJkwzaPlrA" name="agreeDisagreeWithEmployee" dataType="_yTK-e3TXEe2ebue_Fgl6Gw">
         <defaultValue xmi:type="expression:Expression" xmi:id="_FSmY4YIiEe2SSJkwzaPlrA" name="init_agreeDisagreeWithEmployee()" content="''" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_5W71QIWcEe2ubsacwS4RQw" name="companyHandlingGroupId" dataType="_yTK-eXTXEe2ebue_Fgl6Gw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_5W71QYWcEe2ubsacwS4RQw" name="init_companyHandlingGroupId()" content="apiAccessor.getIdentityAPI().getGroupByPath(&quot;/Agency/CompanyHandling/Employee&quot;).id;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_5W71QoWcEe2ubsacwS4RQw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_yTK-XnTXEe2ebue_Fgl6Gw">
         <targetForm xmi:type="expression:Expression" xmi:id="_rzmdgIH2Ee2bvKfjw93Wew" name="CompanyRegistrationForm" content="4e6a1c64-39ca-4f09-b27f-2bc7021057ec" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

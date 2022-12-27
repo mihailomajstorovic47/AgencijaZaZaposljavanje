@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "HRBossEmployeeSelectionForm",
   "name" : "HRBossEmployeeSelectionForm",
-  "lastUpdate" : 1671918457380,
+  "lastUpdate" : 1672140147165,
   "rows" : [
     [
       {
@@ -476,7 +476,7 @@
                   },
                   "availableValues" : {
                     "type" : "expression",
-                    "value" : "employees"
+                    "value" : "hrEmployees"
                   },
                   "displayedKey" : {
                     "type" : "constant",
@@ -762,7 +762,28 @@
     "employees" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&fgroup_id=0"
+        "../API/identity/user?p=0&c=100&f=group_id={{projectGroupId.value}}"
+      ],
+      "exposed" : false
+    },
+    "projectGroupId" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/projectGroupId"
+      ],
+      "exposed" : false
+    },
+    "hrGroupId" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/hrEmployeeGroupId"
+      ],
+      "exposed" : false
+    },
+    "hrEmployees" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?p=0&c=100&f=group_id={{hrGroupId.value}}"
       ],
       "exposed" : false
     }
