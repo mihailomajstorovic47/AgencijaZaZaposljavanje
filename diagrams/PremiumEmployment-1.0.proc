@@ -780,9 +780,9 @@
                 <expression xmi:type="expression:TableExpression" xmi:id="_ZBlaVpKcEe2kf6-5KPkXCg">
                   <expressions xmi:type="expression:ListExpression" xmi:id="_ZBlaV5KcEe2kf6-5KPkXCg">
                     <expressions xmi:type="expression:Expression" xmi:id="_ZBlaWJKcEe2kf6-5KPkXCg" name="payer" content="payer" returnTypeFixed="true"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_ZBlaWZKcEe2kf6-5KPkXCg" name="newScript()" content="import org.bonitasoft.engine.identity.User&#xD;&#xA;import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI()&#xD;&#xA;&#x9;.getUser(apiAccessor.getProcessAPI().getProcessInstance(processInstanceId).getStartedBy());&#xD;&#xA;&#x9;User user = apiAccessor.getIdentityAPI().getUserByUserName(processInitiator.userName);&#xD;&#xA;&#x9;return user.getFirstName() + &quot;&quot; + user.getLastName();&#xD;&#xA;&#x9;&#xD;&#xA;}catch(UserNotFoundException e){}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                      <referencedElements xmi:type="expression:Expression" xmi:id="_Ex7iwJKfEe2kf6-5KPkXCg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-                      <referencedElements xmi:type="expression:Expression" xmi:id="_Ex7iwZKfEe2kf6-5KPkXCg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_ZBlaWZKcEe2kf6-5KPkXCg" name="newScript()" content="import org.bonitasoft.engine.identity.User&#xD;&#xA;import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI()&#xD;&#xA;&#x9;.getUser(apiAccessor.getProcessAPI().getProcessInstance(processInstanceId).getStartedBy());&#xD;&#xA;&#x9;User user = apiAccessor.getIdentityAPI().getUserByUserName(processInitiator.userName);&#xD;&#xA;&#x9;return user.getFirstName() + &quot; &quot; + user.getLastName();&#xD;&#xA;&#x9;&#xD;&#xA;}catch(UserNotFoundException e){}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                      <referencedElements xmi:type="expression:Expression" xmi:id="_PWqVsJKzEe2OY7ogiqN0jw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+                      <referencedElements xmi:type="expression:Expression" xmi:id="_PWqVsZKzEe2OY7ogiqN0jw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
                     </expressions>
                   </expressions>
                   <expressions xmi:type="expression:ListExpression" xmi:id="_ZBlaWpKcEe2kf6-5KPkXCg">
@@ -795,7 +795,7 @@
                   </expressions>
                   <expressions xmi:type="expression:ListExpression" xmi:id="_ZBlaYJKcEe2kf6-5KPkXCg">
                     <expressions xmi:type="expression:Expression" xmi:id="_ZBlaYZKcEe2kf6-5KPkXCg" name="date" content="date" returnTypeFixed="true"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_ZBlaYpKcEe2kf6-5KPkXCg" name="newScript()" content="import java.time.LocalDateTime&#xD;&#xA;&#xD;&#xA;return LocalDateTime.now().toString();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_ZBlaYpKcEe2kf6-5KPkXCg" name="newScript()" content="import java.time.LocalDate&#xD;&#xA;&#xD;&#xA;return LocalDate.now().toString();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
                   </expressions>
                   <expressions xmi:type="expression:ListExpression" xmi:id="_ZBlaY5KcEe2kf6-5KPkXCg">
                     <expressions xmi:type="expression:Expression" xmi:id="_ZBlaZJKcEe2kf6-5KPkXCg" name="paymentFor" content="paymentFor" returnTypeFixed="true"/>

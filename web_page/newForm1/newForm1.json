@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "newForm1",
   "name" : "newForm1",
-  "lastUpdate" : 1673546940798,
+  "lastUpdate" : 1673557202510,
   "rows" : [
     [
       {
@@ -160,6 +160,168 @@
                 },
                 "label" : {
                   "type" : "interpolation",
+                  "value" : "Objective"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "placeholder" : {
+                  "type" : "interpolation"
+                },
+                "value" : {
+                  "type" : "variable",
+                  "value" : "formInput.objective"
+                },
+                "type" : {
+                  "type" : "constant",
+                  "value" : "text"
+                },
+                "min" : {
+                  "type" : "constant"
+                },
+                "max" : {
+                  "type" : "constant"
+                },
+                "step" : {
+                  "type" : "constant",
+                  "value" : 1
+                }
+              },
+              "reference" : "f1c05445-7983-44ce-ad83-7f38f07396e8",
+              "hasValidationError" : false,
+              "id" : "pbInput"
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "minLength" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "maxLength" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "readOnly" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Skills & abilities"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "placeholder" : {
+                  "type" : "interpolation"
+                },
+                "value" : {
+                  "type" : "variable",
+                  "value" : "formInput.skills"
+                },
+                "type" : {
+                  "type" : "constant",
+                  "value" : "text"
+                },
+                "min" : {
+                  "type" : "constant"
+                },
+                "max" : {
+                  "type" : "constant"
+                },
+                "step" : {
+                  "type" : "constant",
+                  "value" : 1
+                }
+              },
+              "reference" : "36791d9c-7ebb-441b-bede-a336b6918bde",
+              "hasValidationError" : false,
+              "id" : "pbInput"
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "required" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "minLength" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "maxLength" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "readOnly" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "label" : {
+                  "type" : "interpolation",
                   "value" : "Experience"
                 },
                 "labelPosition" : {
@@ -175,7 +337,7 @@
                 },
                 "value" : {
                   "type" : "variable",
-                  "value" : "context.experience"
+                  "value" : "formInput.experience"
                 },
                 "type" : {
                   "type" : "constant",
@@ -253,7 +415,7 @@
                 },
                 "value" : {
                   "type" : "variable",
-                  "value" : "context.contentOfCoverLetter"
+                  "value" : "formInput.contentOfCoverLetter"
                 }
               },
               "reference" : "dac50363-fbdb-4b22-a6dc-c8551e21cc72",
@@ -466,7 +628,10 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "",
+        "\tobjective: $data.formInput.objective,",
+        "\tskills: $data.formInput.skills,",
+        "\texperience: $data.formInput.experience,",
+        "\tcontentOfCoverLetter: $data.formInput.contentOfCoverLetter",
         "}"
       ],
       "exposed" : false
@@ -482,6 +647,18 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"objective\" : \"\",\r",
+        "  \"skills\" : \"\",\r",
+        "  \"experience\": \"\",\r",
+        "  \"contentOfCoverLetter\": \"\"\r",
+        "}"
       ],
       "exposed" : false
     }

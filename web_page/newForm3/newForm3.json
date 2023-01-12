@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "newForm3",
   "name" : "newForm3",
-  "lastUpdate" : 1673549907666,
+  "lastUpdate" : 1673555840834,
   "rows" : [
     [
       {
@@ -166,7 +166,8 @@
                     "value" : "Yes"
                   },
                   "dataToSend" : {
-                    "type" : "expression"
+                    "type" : "expression",
+                    "value" : "formOutput"
                   },
                   "dataFromError" : {
                     "type" : "variable",
@@ -425,10 +426,10 @@
       "exposed" : false
     },
     "formOutput" : {
-      "type" : "expression",
+      "type" : "json",
       "value" : [
-        "return {",
-        "",
+        "{\r",
+        "  \"generateFiles\" : true\r",
         "}"
       ],
       "exposed" : false
@@ -444,6 +445,15 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "formOutput1" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"generateFiles\" : false\r",
+        "}"
       ],
       "exposed" : false
     }

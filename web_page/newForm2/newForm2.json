@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "newForm2",
   "name" : "newForm2",
-  "lastUpdate" : 1673549741779,
+  "lastUpdate" : 1673554513908,
   "rows" : [
     [
       {
@@ -132,7 +132,7 @@
                 },
                 "document" : {
                   "type" : "variable",
-                  "value" : ""
+                  "value" : "context.cv_ref"
                 },
                 "showPreview" : {
                   "type" : "constant",
@@ -170,7 +170,7 @@
                 },
                 "document" : {
                   "type" : "variable",
-                  "value" : ""
+                  "value" : "context.coverLetter_ref"
                 },
                 "showPreview" : {
                   "type" : "constant",
