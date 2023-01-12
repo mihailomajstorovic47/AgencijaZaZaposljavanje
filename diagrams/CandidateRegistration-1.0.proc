@@ -829,7 +829,9 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_unSlMJKhEe2CdYoP_xMsmg" name="Upload files" target="_3hTI1mv_Ee2sQ8KMCTgfFQ" source="_sh4-8JKhEe2CdYoP_xMsmg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_unSlMZKhEe2CdYoP_xMsmg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_unSlMpKhEe2CdYoP_xMsmg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_unSlMpKhEe2CdYoP_xMsmg" name="newScript()" content="generateFiles == false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_AkEQ0JLDEe2bpvv9CwZKAQ" name="generateFiles" dataType="_3hTv62v_Ee2sQ8KMCTgfFQ"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_vbWfYJKhEe2CdYoP_xMsmg" target="_sh4-8JKhEe2CdYoP_xMsmg" source="_qOdHQJKiEe2CdYoP_xMsmg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_vbWfYZKhEe2CdYoP_xMsmg"/>
