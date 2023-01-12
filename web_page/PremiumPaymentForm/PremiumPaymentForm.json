@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "PremiumPaymentForm",
   "name" : "PremiumPaymentForm",
-  "lastUpdate" : 1671885501114,
+  "lastUpdate" : 1673543694317,
   "rows" : [
     [
       {
@@ -102,6 +102,46 @@
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "type" : {
+                  "type" : "constant",
+                  "value" : "Process document"
+                },
+                "url" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "document" : {
+                  "type" : "variable",
+                  "value" : "context.premiumEmploymentPdf_ref"
+                },
+                "showPreview" : {
+                  "type" : "constant",
+                  "value" : true
+                }
+              },
+              "reference" : "886afbd3-5d4c-4880-8d1f-9c91a6e3c2cf",
+              "hasValidationError" : false,
+              "id" : "pbFileViewer"
             }
           ]
         ]
