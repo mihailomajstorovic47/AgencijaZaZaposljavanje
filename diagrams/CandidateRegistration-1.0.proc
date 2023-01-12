@@ -178,7 +178,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_sh4-8ZKhEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_sh4-85KhEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_cazKIJKiEe2CdYoP_xMsmg" name="Fill form for CV and Cover Letter" outgoing="_zuH8IJKhEe2CdYoP_xMsmg" incoming="_t19O4JKhEe2CdYoP_xMsmg" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_cazKIJKiEe2CdYoP_xMsmg" name="Form for CV and Cover Letter" outgoing="_zuH8IJKhEe2CdYoP_xMsmg" incoming="_t19O4JKhEe2CdYoP_xMsmg" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_FT4uYpKhEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FT4uYZKhEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_FT4uY5KhEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
@@ -250,7 +250,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_cazxO5KiEe2CdYoP_xMsmg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_qOdHQJKiEe2CdYoP_xMsmg" documentation="Do you want to generate CV and Cover letter?" name="Choose generate or upload documents" outgoing="_vbWfYJKhEe2CdYoP_xMsmg" incoming="_HQW_YHTXEe2ebue_Fgl6Gw" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_qOdHQJKiEe2CdYoP_xMsmg" documentation="Do you want to generate CV and cover letter?" name="Choose generate or upload documents" outgoing="_vbWfYJKhEe2CdYoP_xMsmg" incoming="_HQW_YHTXEe2ebue_Fgl6Gw" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_pJEecZKgEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_pJEecJKgEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_pJEecpKgEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
@@ -473,7 +473,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_bv9n-JKjEe2CdYoP_xMsmg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_bv9n95KjEe2CdYoP_xMsmg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_h0n5EJKjEe2CdYoP_xMsmg" documentation="You're CV and Cover Letter" name="Preview documents" outgoing="_jsgAsJKjEe2CdYoP_xMsmg" incoming="_jGnscJKjEe2CdYoP_xMsmg" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_h0n5EJKjEe2CdYoP_xMsmg" documentation="Your CV and cover letter" name="Preview documents" outgoing="_jsgAsJKjEe2CdYoP_xMsmg" incoming="_jGnscJKjEe2CdYoP_xMsmg" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_h0ogIZKjEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_h0ogIJKjEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_h0ogIpKjEe2CdYoP_xMsmg" name="" content="" returnTypeFixed="true"/>
@@ -965,7 +965,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_3hUW9mv_Ee2sQ8KMCTgfFQ" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_3hUW92v_Ee2sQ8KMCTgfFQ" type="3005" element="_3hTI1mv_Ee2sQ8KMCTgfFQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_3hUW-Gv_Ee2sQ8KMCTgfFQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3hUW-Wv_Ee2sQ8KMCTgfFQ" x="53" y="378" width="120" height="60"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3hUW-Wv_Ee2sQ8KMCTgfFQ" x="53" y="378" width="177" height="88"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_3hUW-mv_Ee2sQ8KMCTgfFQ" type="3002" element="_3hTI0mv_Ee2sQ8KMCTgfFQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_3hUW-2v_Ee2sQ8KMCTgfFQ" type="5024">
